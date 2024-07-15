@@ -166,7 +166,7 @@
             const gemsContent = document.getElementById('gems-content');
             
             showGemsButton.addEventListener('click', function(event) {
-                event.preventDefault();
+                event.preventDefault(); // Prevent the default action of the anchor tag
                 gemsContent.classList.toggle('hidden-content');
             });
         });
