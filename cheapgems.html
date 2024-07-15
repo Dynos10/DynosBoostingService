@@ -7,14 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: url('https://cdn.discordapp.com/attachments/1262022033009545278/1262540913352376320/Dynos_boost.png?ex=6696f85a&is=6695a6da&hm=3f804e8252fd101673477aec2a588e03c2ca03dcd437a3490aa896a318b83661&') no-repeat center center fixed;
+            background-size: cover;
             text-align: center;
             padding: 20px;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,6 +45,19 @@
             margin-top: 20px;
             font-size: 14px;
             color: #666;
+            position: relative;
+        }
+        .footer:hover::after {
+            content: 'Discord: dyn0ss';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 1;
         }
         .back-button {
             position: absolute;
@@ -67,7 +81,10 @@
     <a href="https://dynos10.github.io/DynosBoostingService/#" class="back-button">Back to Home</a>
     <div class="container">
         <h1>✨ Cheap Gems Sale! ✨</h1>
+        <img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262540912915906671/5f97e9a8159170892d4ccaeb80e2ecde.webp?ex=6696f85a&is=6695a6da&hm=5399ff629e166aa401b38d42d00ac8a3cb89049311c76ec03be24717ddb04d56" alt="Image above Matcherino Pin">
         <ul class="prices">
+            <li><img src="https://i.ytimg.com/vi/gPPC0Ko8qpg/maxresdefault.jpg" alt="Cheap Gems Method Emoji"> Cheap Gems Method: €50</li>
+            <li><img src="https://store.supercell.com/images/brawlstars/22aca1ef196c745a8717c6ce0da39120.png" alt="Brawl Pass+ Emoji"> Brawl Pass+: €10</li>
             <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262553955616161844/image-removebg-preview.png?ex=66970480&is=6695b300&hm=292c5b03dbcdf3b33fd6555b87fd662f45e701cc86710037c0db3145e896d69b" alt="Matcherino Pin"> Matcherino Pin: €5</li>
             <li><img src="https://store.supercell.com/images/brawlstars/d04c36aee9f3b57f25f1e9b251c4a34d.png" alt="Brawl Stars Gem Icon"> Gems 30 + 3 Gems: €2</li>
             <li><img src="https://store.supercell.com/images/brawlstars/d04c36aee9f3b57f25f1e9b251c4a34d.png" alt="Brawl Stars Gem Icon"> Gems 80 + 8 Gems: €5</li>
@@ -75,8 +92,6 @@
             <li><img src="https://store.supercell.com/images/brawlstars/d04c36aee9f3b57f25f1e9b251c4a34d.png" alt="Brawl Stars Gem Icon"> Gems 360 + 36 Gems: €18</li>
             <li><img src="https://store.supercell.com/images/brawlstars/d04c36aee9f3b57f25f1e9b251c4a34d.png" alt="Brawl Stars Gem Icon"> Gems 950 + 95 Gems: €50</li>
             <li><img src="https://store.supercell.com/images/brawlstars/d04c36aee9f3b57f25f1e9b251c4a34d.png" alt="Brawl Stars Gem Icon"> Gems 2000 + 200 Gems: €100</li>
-            <li><img src="https://i.ytimg.com/vi/gPPC0Ko8qpg/maxresdefault.jpg" alt="Cheap Gems Method Emoji"> Cheap Gems Method: €50</li>
-            <li><img src="https://store.supercell.com/images/brawlstars/22aca1ef196c745a8717c6ce0da39120.png" alt="Brawl Pass+ Emoji"> Brawl Pass+: €10</li>
         </ul>
         <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
         <div class="footer">Made by Dynos</div>
