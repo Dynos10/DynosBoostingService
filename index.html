@@ -161,14 +161,10 @@
     </div>
 
     <script>
-        // JavaScript to toggle visibility of gems content
-        const showGemsButton = document.getElementById('show-gems-button');
-        const gemsContent = document.getElementById('gems-content');
-        
-        showGemsButton.addEventListener('click', function(event) {
-            event.preventDefault();
-            gemsContent.classList.toggle('hidden-content');
-        });
-    </script>
-</body>
-</html>
+        document.addEventListener('DOMContentLoaded', function() {
+            const showGemsButton = document.getElementById('show-gems-button');
+            const gemsContent = document.getElementById('gems-content');
+            
+            showGemsButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                gemsContent
