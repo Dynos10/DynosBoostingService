@@ -40,6 +40,11 @@
         .button:hover {
             background-color: #4752c4;
         }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -48,7 +53,10 @@
         <p>
             We are dedicated Brawl Stars players with a passion for excellence. Our boosting team includes many players with Rank 30 achievements. We treat boosting like a real job, ensuring top-quality service and customer satisfaction. Join us for a reliable and professional boosting experience!
         </p>
-        <a href="https://dynos10.github.io/DynosBoostingService/aboutus" class="button">Learn More</a>
+        <div class="button-container">
+            <a href="https://dynos10.github.io/DynosBoostingService/#" class="button">Back to Home</a>
+            <a href="https://dynos10.github.io/DynosBoostingService/cheapgems" class="button">Cheap Gems</a>
+        </div>
     </div>
 </body>
 </html>
