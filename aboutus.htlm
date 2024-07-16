@@ -17,15 +17,28 @@
             padding: 20px;
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center align content */
         }
         h1 {
-            text-align: center;
             color: #333;
         }
         p {
             font-size: 18px;
             line-height: 1.6;
             color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #5865F2;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #4752c4;
         }
     </style>
 </head>
@@ -35,6 +48,7 @@
         <p>
             We are dedicated Brawl Stars players with a passion for excellence. Our boosting team includes many players with Rank 30 achievements. We treat boosting like a real job, ensuring top-quality service and customer satisfaction. Join us for a reliable and professional boosting experience!
         </p>
+        <a href="https://dynos10.github.io/DynosBoostingService/aboutus" class="button">Learn More</a>
     </div>
 </body>
 </html>
