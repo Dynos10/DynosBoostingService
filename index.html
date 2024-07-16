@@ -21,13 +21,14 @@
             box-sizing: border-box;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for the frame */
             padding: 20px;
             max-width: 400px;
             width: 100%;
             text-align: center;
+            position: relative; /* Ensure relative positioning */
         }
         .button {
             font-size: 16px;
@@ -39,6 +40,9 @@
             border: 2px solid #5865F2;
             transition: background-color 0.3s;
             margin-bottom: 20px; /* Add margin to separate it from the rest of the content */
+            position: absolute; /* Position absolute for placement */
+            top: 20px; /* Adjust top position */
+            left: 20px; /* Adjust left position */
         }
         .button:hover {
             background-color: #4752c4;
