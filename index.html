@@ -3,33 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Server Invite and Prices</title>
+    <title>Discord Server Invite and Boost Prices</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             height: 100vh;
             margin: 0;
-            background: url('https://cdn.discordapp.com/attachments/1262022033009545278/1262691404295966750/Dynos_boost_1.png?ex=66978482&is=66963302&hm=2adaf0cfae9079948a8088f2c04d9009a03682aa991825991bf42f1074619f28&') no-repeat center center fixed;
+            background: url('https://cdn.discordapp.com/attachments/1249280583893254235/1261739046351274004/retouch_2024071319402244.jpg?ex=66955f0e&is=66940d8e&hm=c50d73dba7f39d85cca8182975a33d7f45bbdb7ff73ef31a4f8ca128234e7e56&') no-repeat center center fixed;
             background-size: cover;
-            color: #000;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
         }
         .button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             font-size: 16px;
             color: #fff;
             text-decoration: none;
@@ -38,17 +31,20 @@
             border-radius: 5px;
             border: 2px solid #5865F2;
             transition: background-color 0.3s;
-            margin-bottom: 20px;
         }
         .button:hover {
             background-color: #4752c4;
         }
-        .button.aboutme {
-            margin-bottom: 0; /* Remove the bottom margin to align it directly below Cheap Gems button */
+        .button.boosts {
+            top: 60px;
         }
-        h1, h2, h3 {
-            color: #000;
-            margin: 20px 0;
+        .button.aboutme {
+            left: 160px; /* Position next to Cheap Gems button */
+        }
+        h1 {
+            color: #fff;
+            margin-top: 60px;
+            margin-bottom: 20px;
         }
         .invite-link {
             margin: 20px 0;
@@ -67,78 +63,36 @@
         .prices {
             list-style: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         .prices li {
-            background-color: #f9f9f9;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             margin: 10px 0;
             padding: 10px;
-            width: 100%;
+            width: 200px;
             text-align: center;
             border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .prices li img {
-            margin-right: 10px;
-            max-width: 20px;
         }
         .server-image {
             max-width: 300px;
-            max-height: 300px;
             border-radius: 10px;
             margin: 20px 0;
-        }
-        .hidden-content {
-            display: none;
-            margin-top: 20px;
-            flex-direction: column;
-            align-items: center;
-        }
-        #main-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: auto;
-            box-sizing: border-box;
-        }
-        .footer {
-            font-size: 14px;
-            color: #000;
-            cursor: pointer;
-            transition: color 0.3s;
-            margin-top: 20px;
-        }
-        .footer:hover {
-            color: transparent;
-        }
-        .footer:hover::after {
-            content: 'Discord: dyn0ss';
-            color: #000;
         }
     </style>
 </head>
 <body>
-    <a href="https://dynos10.github.io/DynosShop/cheapgems" class="button">Cheap Gems</a>
+    <a href="gems.html" class="button">Cheap Gems</a>
     <a href="aboutme.html" class="button aboutme">About Me</a>
-    <div class="container">
-        <h1>Join Our Discord Server!</h1>
-        <img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262540912915906671/5f97e9a8159170892d4ccaeb80e2ecde.webp?ex=6696f85a&is=6695a6da&hm=5399ff629e166aa401b38d42d00ac8a3cb89049311c76ec03be24717ddb04d56" alt="Server Image" class="server-image">
-        <a href="https://discord.gg/PBehnyKx2J" class="invite-link">Join Now</a>
-        <h2>Boost Prices</h2>
-        <ul class="prices">
-            <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262558199836311643/image-removebg-preview_2.png" alt="Rank 30 Emoji"> Rank 30: 15 EUR</li>
-            <li><img src="https://media.discordapp.net/attachments/1249280583893254235/1257394964560613479/1000008407-removebg-preview.png" alt="Rank 35 Emoji"> Rank 35: 80 EUR</li>
-            <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262560334359564329/image_2024-07-16_020338692.png" alt="Legendary Emoji"> Legendary: 15 EUR</li>
-            <li><img src="https://cdn.discordapp.com/attachments/1249280583893254235/1257394982042599595/ranked-league-rank-7.png" alt="Masters Emoji"> Masters: 30 EUR</li>
-        </ul>
-        <div class="footer">Made by Dynos</div>
-    </div>
+    <a href="#" class="button boosts">Boost Prices</a>
+    <h1>Join Our Discord Server!</h1>
+    <a href="https://discord.gg/tFmPAV5FJA" class="invite-link">Join Now</a>
+    <img src="https://cdn.discordapp.com/attachments/1249280583893254235/1261734418750378076/retouch_2024071319212666.jpg?ex=66955abf&is=6694093f&hm=059e1108e572efd85f5a5d08da121a080923dbbe8cd233d4db867d8a11239d0b&" alt="Server Image" class="server-image">
+    <h2>Boost Prices</h2>
+    <ul class="prices">
+        <li>Rank 30: 15 EUR</li>
+        <li>Rank 35: 80 EUR</li>
+        <li>Legendary: 15 EUR</li>
+        <li>Masters: 30 EUR</li>
+    </ul>
 </body>
 </html>
