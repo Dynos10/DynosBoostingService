@@ -44,9 +44,8 @@
             z-index: 1;
         }
         .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            display: inline-block;
+            margin-top: 20px;
             font-size: 16px;
             color: #fff;
             text-decoration: none;
@@ -62,10 +61,10 @@
     </style>
 </head>
 <body>
-    <a href="https://dynos10.github.io/DynosBoostingService/" class="back-button">Back to Home</a>
     <div class="container">
         <h1>About Me</h1>
         <p>Add your content here...</p>
+        <a href="https://dynos10.github.io/DynosBoostingService/" class="back-button">Back to Home</a>
         <div class="footer">Made by Dynos</div>
     </div>
 </body>
