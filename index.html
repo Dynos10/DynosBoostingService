@@ -15,20 +15,19 @@
             margin: 0;
             background: url('https://cdn.discordapp.com/attachments/1262022033009545278/1262691404295966750/Dynos_boost_1.png?ex=66978482&is=66963302&hm=2adaf0cfae9079948a8088f2c04d9009a03682aa991825991bf42f1074619f28&') no-repeat center center fixed;
             background-size: cover;
-            color: #000; /* Change text color to black */
+            color: #000;
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Shadow for the frame */
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             padding: 20px;
             max-width: 400px;
             width: 100%;
             text-align: center;
-            position: relative; /* Ensure relative positioning */
         }
         .button {
             font-size: 16px;
@@ -39,46 +38,17 @@
             border-radius: 5px;
             border: 2px solid #5865F2;
             transition: background-color 0.3s;
-            margin-bottom: 20px; /* Add margin to separate it from the rest of the content */
-            position: absolute; /* Position absolute for placement */
-            top: 20px; /* Adjust top position */
-            left: 20px; /* Adjust left position */
+            margin-bottom: 20px;
         }
         .button:hover {
             background-color: #4752c4;
         }
-        .button.boosts {
-            top: 60px;
-        }
-        .button.hidden {
-            display: none;
-        }
-        .button.aboutus {
-            top: 20px; /* Align with the Cheap Gems button */
-            left: calc(100% + 20px); /* Position 20px to the right of the Cheap Gems button */
-        }
         .button.aboutme {
-            font-size: 16px; /* Adjust font size */
-            top: 20px; /* Align with the Cheap Gems button */
-            left: calc(100% + 40px); /* Position 40px to the right of the Cheap Gems button */
-            padding: 10px 20px; /* Adjust padding */
-            background-color: #5865F2;
-            border: 2px solid #5865F2;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button.aboutme:hover {
-            background-color: #4752c4;
+            margin-bottom: 0; /* Remove the bottom margin to align it directly below Cheap Gems button */
         }
         h1, h2, h3 {
-            color: #000; /* Change heading color to black */
+            color: #000;
             margin: 20px 0;
-            text-shadow: none; /* Remove text shadow */
-        }
-        p {
-            text-shadow: none; /* Remove text shadow */
         }
         .invite-link {
             margin: 20px 0;
@@ -103,7 +73,7 @@
             align-items: center;
         }
         .prices li {
-            background-color: #f9f9f9; /* Light gray background */
+            background-color: #f9f9f9;
             border: 1px solid rgba(0, 0, 0, 0.1);
             margin: 10px 0;
             padding: 10px;
@@ -120,9 +90,9 @@
         }
         .server-image {
             max-width: 300px;
-            max-height: 300px; /* Ensure the image fits within the viewport */
+            max-height: 300px;
             border-radius: 10px;
-            margin: 20px 0; /* Margin around the image */
+            margin: 20px 0;
         }
         .hidden-content {
             display: none;
@@ -135,66 +105,40 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: auto; /* Adjust to fit content */
+            height: auto;
             box-sizing: border-box;
         }
         .footer {
             font-size: 14px;
-            color: #000; /* Change text color to black */
-            cursor: pointer; /* Change cursor to pointer on hover */
-            transition: color 0.3s; /* Add transition for smooth hover effect */
+            color: #000;
+            cursor: pointer;
+            transition: color 0.3s;
             margin-top: 20px;
         }
         .footer:hover {
-            color: transparent; /* Hide the text on hover */
+            color: transparent;
         }
         .footer:hover::after {
-            content: 'Discord: dyn0ss'; /* Display this content on hover */
-            color: #000; /* Change the color of the new content */
-            text-shadow: none; /* Remove text shadow from new content */
+            content: 'Discord: dyn0ss';
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <a href="https://dynos10.github.io/DynosShop/cheapgems" class="button" id="show-gems-button">Cheap Gems</a>
-    <a href="https://dynos10.github.io/DynosBoostingService/aboutus" class="button aboutus">About Us</a>
+    <a href="https://dynos10.github.io/DynosShop/cheapgems" class="button">Cheap Gems</a>
     <a href="aboutme.html" class="button aboutme">About Me</a>
     <div class="container">
-        <a href="#" class="button boosts hidden" id="show-boosts-button">Boost Prices</a>
-        <div id="main-content">
-            <h1>Join Our Discord Server!</h1>
-            <img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262540912915906671/5f97e9a8159170892d4ccaeb80e2ecde.webp?ex=6696f85a&is=6695a6da&hm=5399ff629e166aa401b38d42d00ac8a3cb89049311c76ec03be24717ddb04d56" alt="Server Image" class="server-image">
-            <a href="https://discord.gg/PBehnyKx2J" class="invite-link">Join Now</a>
-            <h2>Boost Prices</h2>
-            <ul class="prices">
-                <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262558199836311643/image-removebg-preview_2.png?ex=66970874&is=6695b6f4&hm=ae6c6429c05803f248d5cba94e94ee776b12da70092b63db95c4513cd817c224" alt="Rank 30 Emoji"> Rank 30: 15 EUR</li>
-                <li><img src="https://media.discordapp.net/attachments/1249280583893254235/1257394964560613479/1000008407-removebg-preview.png?ex=6696b4d0&is=66956350&hm=d45b1d8258164afcf861aa9e2d61b1ee515d7c64c336b53c4639098676e06742&=&format=webp&quality=lossless&width=333&height=380" alt="Rank 35 Emoji"> Rank 35: 80 EUR</li>
-                <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262560334359564329/image_2024-07-16_020338692.png?ex=66970a70&is=6695b8f0&hm=c6c329e354fef1dc347304e089ff4afba22db0706f902d38d12592c31b67595a" alt="Legendary Emoji"> Legendary: 15 EUR</li>
-                <li><img src="https://cdn.discordapp.com/attachments/1249280583893254235/1257394982042599595/ranked-league-rank-7.png?ex=6696b4d4&is=66956354&hm=470c19a6df7ccc6427147eade69f53552540315cb4e0135945fc641f0eb4b267&" alt="Masters Emoji"> Masters: 30 EUR</li>
-            </ul>
-            <div class="footer">Made by Dynos</div>
-        </div>
-        <div id="gems-content" class="hidden-content">
-            <h1>✨ Cheap Gems Sale! ✨</h1>
-            <ul class="prices">
-                <li>Matcherino Pin: €5</li>
-            </ul>
-            <h3>Gem Prices:</h3>
-            <ul class="prices">
-                <li>Gems 30 + 3 Gems: €2</li>
-                <li>Gems 80 + 8 Gems: €5</li>
-                <li>Gems 170 + 17 Gems: €10</li>
-                <li>Gems 360 + 36 Gems: €18</li>
-                <li>Gems 950 + 95 Gems: €50</li>
-                <li>Gems 2000 + 200 Gems: €100</li>
-            </ul>
-            <h3>🔥 Special Offers 🔥</h3>
-            <ul class="prices">
-                <li>Cheap Gems Method: €50</li>
-                <li>Brawl Pass+: €10</li>
-            </ul>
-            <p>Don't miss out on these amazing deals! Get your gems now! 🌟</p>
-        </div>
+        <h1>Join Our Discord Server!</h1>
+        <img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262540912915906671/5f97e9a8159170892d4ccaeb80e2ecde.webp?ex=6696f85a&is=6695a6da&hm=5399ff629e166aa401b38d42d00ac8a3cb89049311c76ec03be24717ddb04d56" alt="Server Image" class="server-image">
+        <a href="https://discord.gg/PBehnyKx2J" class="invite-link">Join Now</a>
+        <h2>Boost Prices</h2>
+        <ul class="prices">
+            <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262558199836311643/image-removebg-preview_2.png" alt="Rank 30 Emoji"> Rank 30: 15 EUR</li>
+            <li><img src="https://media.discordapp.net/attachments/1249280583893254235/1257394964560613479/1000008407-removebg-preview.png" alt="Rank 35 Emoji"> Rank 35: 80 EUR</li>
+            <li><img src="https://cdn.discordapp.com/attachments/1262022033009545278/1262560334359564329/image_2024-07-16_020338692.png" alt="Legendary Emoji"> Legendary: 15 EUR</li>
+            <li><img src="https://cdn.discordapp.com/attachments/1249280583893254235/1257394982042599595/ranked-league-rank-7.png" alt="Masters Emoji"> Masters: 30 EUR</li>
+        </ul>
+        <div class="footer">Made by Dynos</div>
     </div>
 </body>
 </html>
